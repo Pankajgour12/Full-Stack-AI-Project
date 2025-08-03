@@ -18,4 +18,4 @@ user:{
 
 const postModel = mongoose.model("post",postSchema)
 
-mudule.exports = postModel;
+module.exports = postModel;

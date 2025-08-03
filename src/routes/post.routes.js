@@ -6,13 +6,12 @@ const multer = require ('multer');
 
 const router = express.Router()
 
-
+const { createPostController } = require('../controllers/post.controllers')
 
 const upload = multer({storage: multer.memoryStorage()})
 
 
 /* POST /api/post [protected]   {image-file} */
-
 
 router.post('/',
     authMiddleware,   /* req.user = userData */
